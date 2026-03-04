@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Maryann Soper – Senior Digital Project Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --accent: #2b6cb0;
+      --text-main: #1a202c;
+      --text-muted: #4a5568;
+      --border: #e2e8f0;
+      --chip-bg: #edf2f7;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 2fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .page { grid-template-columns: 1fr; }
+      .header-meta { text-align: left; }
+      .header { flex-direction: column; align-items: flex-start; }
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      border: 1px solid var(--border);
+    }
+
+    .header {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .header-photo img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .header-main h1 {
+      font-size: 2rem;
+      letter-spacing: 0.03em;
+    }
+
+    .header-main h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: var(--accent);
+      letter-spacing: 0.15em;
+      margin-top: 0.25rem;
+    }
+
+    .header-meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-align: right;
+    }
+
+    .header-meta a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .summary { font-size: 0.98rem; color: var(--text-muted); }
+
+    .section + .section { margin-top: 1.5rem; }
+
+    .item { margin-bottom: 1.1rem; }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .item-title { font-weight: 600; }
+
+    .item-sub { font-size: 0.9rem; color: var(--text-muted); }
+
+    .item-meta { font-size: 0.85rem; color: var(--text-muted); }
+
+    ul { margin-top: 0.4rem; padding-left: 1.1rem; font-size: 0.95rem; color: var(--text-muted); }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+    }
+
+    .chip {
+      background: var(--chip-bg);
+      border-radius: 999px;
+      padding: 0.25rem 0.7rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+
+    .sidebar-section + .sidebar-section { margin-top: 1.5rem; }
+
+    .sidebar-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .sidebar-list li + li { margin-top: 0.35rem; }
+
+    .tagline {
+      margin-top: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <!-- Header -->
+    <header class="card header">
+      <div class="header-photo">
+        <img src="profile.jpg" alt="Maryann Soper headshot" />
+      </div>
+
+      <div class="header-main">
+        <h1>Maryann Soper</h1>
+        <h2>Senior Digital Project Manager</h2>
+        <p class="tagline">
+          Delivering accessible, user‑centred digital products across healthcare, heritage and charity sectors. Creator of GooseyGoo and trustee for Geevor Tin Mine and Stover Country Park.
+        </p>
+      </div>
+
+      <div class="header-meta">
+        <div>Exeter, Devon, UK</div>
+        <div><a href="mailto:maryannsoper@gmail.com">maryannsoper@gmail.com</a></div>
+        <div><a href="tel:+447587171348">07587 171348</a></div>
+        <div><a href="https://www.linkedin.com/in/maryannsoper" target="_blank">LinkedIn</a></div>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="card">
+      <section class="sidebar-section">
+        <h3>Profile</h3>
+        <p class="summary">
+          A seasoned Senior Digital Project Manager with 7+ years’ experience delivering accessible, user‑centred digital products across healthcare, heritage, and charity sectors. Skilled in UX, accessibility, Agile delivery, and data‑driven decision‑making. Creator of GooseyGoo, a digital platform designed, built, and written end‑to‑end. Trustee for Geevor Tin Mine and Stover Country Park.
+        </p>
+      </section>
+
+      <section class="sidebar-section">
+        <h3>Core Competencies</h3>
+        <div class="chips">
+          <span class="chip">Agile PM</span>
+          <span class="chip">UX/UI Design</span>
+          <span class="chip">User Research</span>
+          <span class="chip">Accessibility</span>
+          <span class="chip">Data Analytics</span>
+          <span class="chip">Product Delivery</span>
+        </div>
+      </section>
+
+      <section class="sidebar-section">
+        <h3>Digital Portfolio</h3>
+        <ul class="sidebar-list">
+          <li><a href="https://www.gooseygoo.co.uk" target="_blank">GooseyGoo – Website Design & Build</a></li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h3>Trusteeships</h3>
+        <ul class="sidebar-list">
+          <li>Geevor Tin Mine – Trustee</li>
+          <li>Stover Country Park – Trustee</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h3>Education</h3>
+        <ul class="sidebar-list">
+          <li>MA International Heritage Management – University of Birmingham</li>
+          <li>BSc (Hons) Biomedical Science – University of Wales, Cardiff</li>
+          <li>Agile Project Management Certification – QA Training</li>
+          <li>UX Design Professional Certificate – Google</li>
+          <li>Power BI & SharePoint Masterclass – Microsoft</li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Main content -->
+    <section class="card">
+
+      <section class="section">
+        <h3>Experience</h3>
+
+        <article class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Senior Digital Project Manager</div>
+              <div class="item-sub">Inizio Engage XD · Remote</div>
+            </div>
+            <div class="item-meta">Sept 2022 – Present</div>
+          </div>
+          <ul>
+            <li>Lead the design and delivery of digital products for the healthcare industry, focusing on compliance and engagement.</li>
+            <li>Collaborate with design and development teams to create wireframes, visual mockups, and user‑centred designs.</li>
+            <li>Manage budgets, timelines, and resources for complex six‑figure projects.</li>
+            <li>Event Capability Lead for the digital team, overseeing all event‑related digital work.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Product Manager (Knowledge Hub)</div>
+              <div class="item-sub">National Lottery Heritage Fund · Remote</div>
+            </div>
+            <div class="item-meta">Sept 2019 – Sept 2022</div>
+          </div>
+          <ul>
+            <li>Spearheaded the creation of a digital knowledge base supporting 250+ employees.</li>
+            <li>Delivered digital solutions including a Portfolio Management Service and Capital Data Analysis Tool.</li>
+            <li>Led UX research and testing, increasing user satisfaction by 50%.</li>
+            <li>Delivered national training for digital adoption and transformation.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Heritage Ability Project Manager</div>
+              <div class="item-sub">Living Options Devon · Exeter</div>
+            </div>
+            <div class="item-meta">Nov 2017 – Aug 2019</div>
+          </div>
+          <ul>
+            <li>Managed award‑winning digital accessibility projects across 23 heritage sites.</li>
+            <li>Designed and implemented accessible digital solutions for disabled visitors.</li>
+            <li>Led the “Vote with your Heart” campaign, winning a National Lottery Award.</li>
+            <li>Created an underground mining VR experience for people with disabilities.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section">
+        <h3>Featured Project</h3>
+
+        <article class="item">
+          <div class="item-header">
+            <div class="item-title">GooseyGoo – Digital Platform</div>
+            <div class="item-meta">Designer · Developer · Content Strategist</div>
+          </div>
+          <ul>
+            <li>Designed, built, and launched a full website showcasing digital services.</li>
+            <li>Created all content, establishing a clear brand voice and user‑centred information architecture.</li>
+            <li>Applied UX principles, accessibility standards, and responsive design.</li>
+            <li><a href="https://www.gooseygoo.co.uk" target="_blank">Visit GooseyGoo</a></li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section">
+        <h3>Trustee Roles</h3>
+
+        <article class="item">
+          <div class="item-header">
+            <div class="item-title">Trustee – Geevor Tin Mine</div>
+            <div class="item-meta">Heritage Sector · Ongoing</div>
+          </div>
+          <ul>
+            <li>Provide strategic oversight for one of the UK’s most significant industrial heritage sites.</li>
+            <li>Support digital engagement, accessibility improvements, and long‑term sustainability planning.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-header">
+            <div class="item-title">Trustee – Stover Country Park</div>
+            <div class="item-meta">Environmental & Heritage Governance · Ongoing</div>
+          </div>
+          <ul>
+            <li>Contribute to governance and strategic planning for a major natural heritage site.</li>
+            <li>Champion inclusive access, community engagement, and digital communication initiatives.</li>
+          </ul>
+        </article>
+      </section>
+
+    </section>
+  </main>
+</body>
+</html>
