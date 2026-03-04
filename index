@@ -159,7 +159,7 @@
     <!-- Header -->
     <header class="card header">
       <div class="header-photo">
-        <img src="profile.jpg" alt="Maryann Soper headshot" />
+        <img src="profile.png" alt="Maryann Soper headshot" />
       </div>
 
       <div class="header-main">
