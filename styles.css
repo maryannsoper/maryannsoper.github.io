@@ -58,7 +58,7 @@
       width: 120px;
       height: 120px;
       object-fit: cover;
-      object-position: center 40%;  
+      object-position: center 30%;  
       border-radius: 50%;
       border: 3px solid var(--border);
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
